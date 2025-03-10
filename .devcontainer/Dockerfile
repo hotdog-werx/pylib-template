@@ -7,10 +7,10 @@ ENV UV_PYTHON_INSTALL_DIR=/opt/uv-python
 ENV UV_CACHE_DIR=/opt/uv/.cache/uv
 ENV UV_LINK_MODE=symlink
 ENV XDG_BIN_HOME=/root/.local/bin
-ENV PATH=${XDG_BIN_HOME}:${PATH}
+ENV PATH=${XDG_BIN_HOME}:.codeguide/tasks:${PATH}
 
 # Directories for mounting volumes
-RUN mkdir -p /opt/pnpm /opt/uv /root/.vscode-server/extensions
+RUN mkdir -p /opt/uv /root/.vscode-server/extensions
 
 # base-deps
 RUN --mount=type=bind,source=.devcontainer/installers/apt-get.sh,target=./apt-get.sh \

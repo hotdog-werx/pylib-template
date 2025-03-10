@@ -15,7 +15,6 @@
     "CONTAINER_WORKSPACE": "${containerWorkspaceFolder}"
   },
   "mounts": [
-    "source=opt_pnpm,target=/opt/pnpm,type=volume",
     "source=opt_uv,target=/opt/uv,type=volume",
     "source=m-vscode-server-extensions,target=/root/.vscode-server/extensions,type=volume"
   ],
@@ -44,7 +43,7 @@
           120
         ],
         "python.defaultInterpreterPath": "/opt/uv/pylib-template/bin/python",
-        "python.languageServer": "Pylance",
+        "python.languageServer": "None",
         "python.linting.enabled": true,
         "python.linting.flake8Enabled": true,
         "python.linting.flake8Args": [
@@ -64,6 +63,7 @@
         "EditorConfig.EditorConfig",
         "unifiedjs.vscode-mdx",
         "emeraldwalk.RunOnSave",
+        "charliermarsh.ruff",
         "tamasfe.even-better-toml",
         "streetsidesoftware.code-spell-checker"
       ]
