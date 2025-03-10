@@ -5,3 +5,4 @@ Makefile
 __pycache__/
 *.py[cod]
 *$py.class
+.coverage

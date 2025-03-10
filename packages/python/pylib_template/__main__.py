@@ -1,7 +1,7 @@
 from pylib_template.hello import say_hello
 
 def main():
-    say_hello()
+    print(say_hello())
 
 
 
